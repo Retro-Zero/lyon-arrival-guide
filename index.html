@@ -1,81 +1,0 @@
-<!DOCTYPE html>
-<html lang="fa" dir="rtl">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>سلام لیون</title>
-    <link rel="preconnect" href="https://unpkg.com" />
-    <link rel="stylesheet" href="styles/global.css" />
-    <link rel="stylesheet" href="styles/layout.css" />
-  </head>
-  <body>
-    <a class="skip-link" href="#main">پرش به محتوا</a>
-
-    <header class="site-header" role="banner">
-      <button id="sidebarToggle" class="icon-button" aria-label="باز و بسته کردن منو" aria-controls="sidebar" aria-expanded="false">
-        <i data-feather="menu"></i>
-      </button>
-      <div class="brand">
-        <span class="logo" aria-hidden="true">📘</span>
-        <span class="title">سلام لیون</span>
-      </div>
-      <form id="searchForm" role="search" class="site-search" aria-label="جستجو">
-        <input id="searchInput" type="search" placeholder="جستجو..." aria-label="جستجو" />
-        <button type="submit" class="icon-button" aria-label="جستجو">
-          <i data-feather="search"></i>
-        </button>
-      </form>
-    </header>
-
-    <div class="layout">
-      <aside id="sidebar" class="sidebar" aria-label="ناوبری جانبی">
-        <nav class="nav">
-          <ul>
-            <li><a href="index.html">خانه</a></li>
-            <li><a href="pages/fa/transport.html">حمل‌ونقل</a></li>
-            <li><a href="pages/fa/bank-finance.html">بانک و مالی</a></li>
-            <li><a href="pages/fa/housing.html">مسکن</a></li>
-            <li><a href="pages/fa/daily-life.html">زندگی روزمره</a></li>
-            <li><a href="pages/fa/work.html">کار</a></li>
-            <li><a href="pages/fa/admin-legal.html">اداری و قانونی</a></li>
-          </ul>
-        </nav>
-      </aside>
-
-      <main id="main" class="content" role="main">
-        <section class="hero">
-          <h1>سلام لیون</h1>
-          <p>راهنمای سریع و کاربردی برای تازه‌واردهای فارسی‌زبان به شهر لیون.</p>
-        </section>
-
-        <section class="quick-links">
-          <h2>شروع سریع</h2>
-          <div class="cards">
-            <a class="card" href="pages/fa/transport.html">
-              <i data-feather="map"></i>
-              <span>حمل‌ونقل</span>
-            </a>
-            <a class="card" href="pages/fa/bank-finance.html">
-              <i data-feather="credit-card"></i>
-              <span>بانک و مالی</span>
-            </a>
-            <a class="card" href="pages/fa/housing.html">
-              <i data-feather="home"></i>
-              <span>مسکن</span>
-            </a>
-            <a class="card" href="pages/fa/admin-legal.html">
-              <i data-feather="file-text"></i>
-              <span>اداری و قانونی</span>
-            </a>
-          </div>
-        </section>
-      </main>
-    </div>
-
-    <script src="https://unpkg.com/feather-icons"></script>
-    <script src="scripts/app.js" defer></script>
-    <script src="scripts/nav.js" defer></script>
-    <script src="scripts/search.js" defer></script>
-  </body>
-  </html>
-
