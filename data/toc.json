@@ -1,0 +1,12 @@
+{
+  "fa": [
+    { "title": "خانه", "href": "/index.html" },
+    { "title": "حمل‌ونقل", "href": "/pages/fa/transport.html" },
+    { "title": "بانک و مالی", "href": "/pages/fa/bank-finance.html" },
+    { "title": "مسکن", "href": "/pages/fa/housing.html" },
+    { "title": "زندگی روزمره", "href": "/pages/fa/daily-life.html" },
+    { "title": "کار", "href": "/pages/fa/work.html" },
+    { "title": "اداری و قانونی", "href": "/pages/fa/admin-legal.html" }
+  ]
+}
+
