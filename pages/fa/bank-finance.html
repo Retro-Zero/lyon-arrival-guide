@@ -37,6 +37,19 @@
   <footer class="site-footer" role="contentinfo">
     <small>آخرین به‌روزرسانی: <span id="last-updated">—</span></small>
   </footer>
+
+  <!-- Search Modal -->
+  <div class="search-overlay" id="search-overlay" hidden></div>
+  <div class="search-modal" id="search-modal" role="dialog" aria-modal="true" aria-labelledby="search-title" hidden>
+    <div class="search-header">
+      <i data-feather="search"></i>
+      <input id="search-input" class="search-input" type="search" placeholder="جستجو..." autocomplete="off"/>
+      <button id="search-close" class="sidebar-toggle" aria-label="بستن">
+        <i data-feather="x"></i>
+      </button>
+    </div>
+    <div id="search-results" class="search-results" role="listbox" aria-label="نتایج"></div>
+  </div>
   <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
   <script src="https://unpkg.com/feather-icons"></script>
   <script src="../../scripts/app.js" defer></script>
