@@ -56,6 +56,13 @@ p { margin: 0 0 var(--space-4); }
 .header-actions a { padding: var(--space-2); border-radius: var(--radius-sm); }
 .header-actions a:hover { background: var(--color-surface); }
 
+/* Sidebar toggle (hidden on desktop) */
+.sidebar-toggle { display: none; background: transparent; border: 0; padding: var(--space-2); cursor: pointer; }
+.sidebar-toggle i { vertical-align: middle; }
+
+/* Media defaults */
+img, svg, video { max-width: 100%; height: auto; }
+
 /* Footer */
 .site-footer {
   border-top: 1px solid var(--color-border);

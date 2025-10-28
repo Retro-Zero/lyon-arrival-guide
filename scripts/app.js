@@ -11,6 +11,16 @@ document.addEventListener('DOMContentLoaded', function () {
       toggle.setAttribute('aria-expanded', String(!expanded));
       sidebar.classList.toggle('open');
     });
+
+    // Close on outside click (mobile)
+    document.addEventListener('click', (e) => {
+      if (!sidebar.classList.contains('open')) return;
+      const within = sidebar.contains(e.target) || toggle.contains(e.target);
+      if (!within) {
+        sidebar.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+      }
+    });
   }
 
   const lastUpdatedEl = document.getElementById('last-updated');
