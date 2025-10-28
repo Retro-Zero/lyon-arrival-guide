@@ -1,5 +1,6 @@
 {
   "fa": [
+    { "title": "پیش مهاجرت", "path": "/pages/fa/pre-arrival.html" },
     { "title": "خانه", "path": "/index.html" },
     { "title": "حمل و نقل", "path": "/pages/fa/transport.html" },
     { "title": "بانک و امور مالی", "path": "/pages/fa/bank-finance.html" },
