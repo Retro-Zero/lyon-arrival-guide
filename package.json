@@ -1,0 +1,15 @@
+{
+  "name": "lyon",
+  "version": "1.0.0",
+  "description": "راهنمای سبک و مینیمال برای شروع زندگی در لیون (نسخه فارسی).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "pdf-parse": "^1.1.3"
+  }
+}

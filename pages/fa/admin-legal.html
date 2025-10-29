@@ -17,20 +17,36 @@
   <div class="layout">
     <aside class="sidebar">
       <nav class="sidebar-nav">
-        <ul>
-          <li><a href="transport.html">حمل و نقل</a></li>
-          <li><a href="bank-finance.html">بانک و امور مالی</a></li>
-          <li><a href="housing.html">مسکن</a></li>
-          <li><a href="daily-life.html">زندگی روزمره</a></li>
-          <li><a href="work.html">کار</a></li>
-          <li><a href="admin-legal.html">اداری و قانونی</a></li>
-        </ul>
+        <ul></ul>
       </nav>
     </aside>
     <main id="main" class="content" role="main">
       <article class="page">
         <h1>اداری و قانونی</h1>
-        <p>مهاجرت، اقامت، OFII، CPAM، CAF و روندهای اداری مهم در فرانسه.</p>
+
+        <h2 id="visa-validate">تأیید ویزا (ولیداسیون)</h2>
+        <p>از زمان ورود به فرانسه <b>حداکثر ۲ ماه</b> فرصت داری ویزا را در سایت مهاجرت <b>تأیید/ولیده</b> کنی. هزینه معمولاً برای دانشجو ~<b>۵۰€</b> و برای تلنت ~<b>۲۲۵€</b> است. در بخش ویزا جزئیات تکمیل می‌شود.</p>
+
+        <h2 id="rdv">RDV (وقت قبلی)</h2>
+        <p>در فرانسه تقریباً برای هر کاری <b>وقت قبلی</b> لازم است: ادارات دولتی، بانک، اپراتورها. بدون نوبت معمولاً پذیرش نمی‌کنند (به‌جز برخی پنجره‌های صبح). از همان روزهای اول این الگو را بپذیر.</p>
+
+        <h2 id="calls">تماس‌ها و کلاهبرداری‌ها</h2>
+        <div class="callout warn">
+          <div class="title"><i data-feather="alert-octagon"></i><span>قوانین تماس</span></div>
+          <p>هیچ کار مهمی از طریق <b>تلفن</b> با شما انجام نمی‌شود. اطلاعات بانکی <b>RIB/IBAN</b> را تلفنی نده. پیامک‌های حاوی لینک ورود/پرداخت غالباً کلاهبرداری است. حفاظت اسپم گوشی را فعال کن.</p>
+        </div>
+
+        <h2 id="safety">ایمنی فردی</h2>
+        <p>کیف‌قاپی/گوشی‌قاپی رایج است؛ مادامی که <b>خشونت</b> نباشد، پلیس پیگیری قوی ندارد. موبایل و کیف را نزدیک بدن نگه دار.</p>
+
+        <h2 id="first-checklist">چک‌لیست اداری روزهای اول</h2>
+        <ul class="checklist">
+          <li><input type="checkbox" id="c-home" /><label for="c-home">قرارداد خانه/رزیدانس</label></li>
+          <li><input type="checkbox" id="c-sim" /><label for="c-sim">سیم‌کارت اولیه (سفری/موقت)</label></li>
+          <li><input type="checkbox" id="c-bank" /><label for="c-bank">شروع فرآیند حساب بانکی</label></li>
+          <li><input type="checkbox" id="c-caf" /><label for="c-caf">بررسی شرایط CAF</label></li>
+          <li><input type="checkbox" id="c-insurance" /><label for="c-insurance">بیمه (سلامت/تکمیلی/مسئولیت مدنی)</label></li>
+        </ul>
       </article>
     </main>
   </div>
@@ -53,6 +69,7 @@
   <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
   <script src="https://unpkg.com/feather-icons"></script>
   <script src="../../scripts/app.js" defer></script>
+  <script src="../../scripts/checklist.js" defer></script>
   <script src="../../scripts/nav.js" defer></script>
   <script src="../../scripts/search.js" defer></script>
 </body>
