@@ -29,5 +29,33 @@ document.addEventListener('DOMContentLoaded', function () {
     const dateStr = new Intl.DateTimeFormat('fa-IR', { dateStyle: 'medium' }).format(d);
     lastUpdatedEl.textContent = dateStr;
   }
+
+  // Header shadow on scroll
+  const header = document.querySelector('.site-header');
+  const onScroll = () => {
+    if (!header) return;
+    if (window.scrollY > 4) header.classList.add('elevated');
+    else header.classList.remove('elevated');
+  };
+  onScroll();
+  window.addEventListener('scroll', onScroll, { passive: true });
+
+  // Simple section highlight (h2 with id)
+  const sectionHeads = Array.from(document.querySelectorAll('main h2[id]'));
+  const sidebarLinks = Array.from(document.querySelectorAll('.sidebar-nav a[href^="#"]'));
+  if (sectionHeads.length && sidebarLinks.length && 'IntersectionObserver' in window) {
+    const byId = new Map(sidebarLinks.map(a => [a.getAttribute('href')?.slice(1), a]));
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        const link = byId.get(e.target.id);
+        if (!link) return;
+        if (e.isIntersecting) {
+          sidebarLinks.forEach(l => l.classList.remove('active'));
+          link.classList.add('active');
+        }
+      });
+    }, { rootMargin: '0px 0px -70% 0px', threshold: [0, 1] });
+    sectionHeads.forEach(h => io.observe(h));
+  }
 });
 

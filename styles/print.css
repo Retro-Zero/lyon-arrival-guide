@@ -1,0 +1,9 @@
+@media print {
+  .site-header, .sidebar, .site-footer, .search-overlay, .search-modal { display: none !important; }
+  .layout { display: block; padding: 0; max-width: none; }
+  .content { width: 100%; }
+  a[href]:after { content: " (" attr(href) ")"; font-size: 0.9em; color: #6b7280; }
+  .card, .callout { break-inside: avoid; }
+}
+
+
