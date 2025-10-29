@@ -2,9 +2,9 @@ document.addEventListener('DOMContentLoaded', function () {
   const sidebarNav = document.querySelector('.sidebar-nav ul');
   if (!sidebarNav) return;
 
-  // If we're on a content page with multiple sections, build a local ToC
+  // If we're on a FA content page with sections, build a local ToC
   const headings = Array.from(document.querySelectorAll('main h2[id]'));
-  if (headings.length && location.pathname.includes('/pages/fa/pre-arrival.html')) {
+  if (headings.length && location.pathname.includes('/pages/fa/')) {
     sidebarNav.innerHTML = '';
     headings.forEach(h => {
       const li = document.createElement('li');
