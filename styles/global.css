@@ -1,8 +1,15 @@
 @font-face {
   font-family: 'IranSansXFaNum';
-  src: url('../fonts/IranSansXFaNum.woff2') format('woff2'),
-       url('../fonts/IranSansXFaNum.woff') format('woff');
-  font-weight: 100 900;
+  src: url('../fonts/IRANSansXFaNum-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IranSansXFaNum';
+  src: url('../fonts/IRANSansXFaNum-Bold.ttf') format('truetype');
+  font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
